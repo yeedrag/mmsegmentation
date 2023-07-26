@@ -82,7 +82,7 @@ class DiceLoss(nn.Module):
                  reduction='mean',
                  naive_dice=False,
                  loss_weight=1.0,
-                 ignore_index=-100,
+                 ignore_index=255,
                  eps=1e-3,
                  loss_name='loss_dice'):
         """Compute dice loss.
